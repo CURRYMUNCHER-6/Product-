@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+<head><style>body{
+text-align:center;
+background-image:url(https://upload.wikimedia.org/wikipedia/commons/3/3e/Einstein_1921_by_F_Schmutzer_-_restoration.jpg);
+background-size:cover;
+background-repeat:no-repeat;
+color:white;
+}</style></head>
+<h2>NUMBER PRODUCT CALCULATOR</h2>
+<p>Enter the first number:</p>
+<input type="number" id="num1">
+<p>Enter the second number:</p>
+<input type="number" id="num2">
+<br><br>
+<button onclick="number()">Calculate Product</button>
+<p id="result"></p>
+<script>
+function number(){
+var a=document.getElementById("num1").value
+var b=document.getElementById("num2").value
+var c=a*b 
+document.getElementById("result").innerHTML=c
+}
+
+
+</script>
+
+</body>
+</html>
